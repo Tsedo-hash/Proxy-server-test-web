@@ -1,0 +1,12 @@
+import logging
+
+# Лог файл тохируулах
+logging.basicConfig(
+    filename='logs/app.log',  # Лог файл хадгалах байршил
+    level=logging.INFO,       # Логгийн түвшин (INFO буюу мэдээлэл, WARN буюу анхааруулга)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Лог бичих формат
+)
+
+# Лог бичих жишээ
+logging.info('User signed up: example@example.com')
+logging.info('User signed in: example@example.com')
